@@ -163,30 +163,23 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<!-- Journal (open by default) -->
-<details open="">
-<summary>
-<strong>Journal papers</strong>
-</summary>
-<iframe src="pubs-journal.html" loading="lazy" style="width:100%; height:1600px; border:0;">
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Journal papers</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Conference papers</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Preprints &amp; working papers</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<iframe id="tab-journal" src="pubs-journal.html" loading="lazy" style="width:100%; border:0; height:200px;">
 </iframe>
-</details>
-<!-- Conference -->
-<details>
-<summary>
-<strong>Conference papers</strong>
-</summary>
-<iframe src="pubs-conference.html" loading="lazy" style="width:100%; height:1200px; border:0;">
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<iframe id="tab-conf" src="pubs-conference.html" loading="lazy" style="width:100%; border:0; height:200px;">
 </iframe>
-</details>
-<!-- Preprints -->
-<details>
-<summary>
-<strong>Preprints &amp; working papers</strong>
-</summary>
-<iframe src="pubs-preprints.html" loading="lazy" style="width:100%; height:1600px; border:0;">
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<iframe id="tab-preprints" src="pubs-preprints.html" loading="lazy" style="width:100%; border:0; height:200px;">
 </iframe>
-</details>
+</div>
+</div>
+</div>
 
 
 
