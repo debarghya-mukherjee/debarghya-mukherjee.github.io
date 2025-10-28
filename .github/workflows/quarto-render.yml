@@ -4,7 +4,7 @@ on:
   push:
     branches: [ "main" ]
     paths-ignore:
-      - 'docs/**'     # avoid infinite loop
+      - 'docs/**'
   workflow_dispatch:
 
 concurrency:
@@ -17,7 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0            # allow rebase
+          fetch-depth: 0       # needed for rebase
       - uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Render site
@@ -30,10 +30,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add docs
-          git commit -m "Render site" || exit 0
+          # stage all generated changes (new + modified)
+          git add -A docs
+          git commit -m "Render site" || echo "No changes to commit"
 
-          # bring branch up-to-date, then push
+          # if the branch moved while we rendered, rebase safely
           git fetch origin "$BRANCH"
-          git pull --rebase origin "$BRANCH"
+          git pull --rebase --autostash origin "$BRANCH"
           git push origin HEAD:"$BRANCH"
