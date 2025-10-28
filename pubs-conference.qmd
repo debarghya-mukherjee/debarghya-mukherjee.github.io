@@ -1,6 +1,7 @@
 ---
 title: "Conference papers"
 bibliography: refs-conference.bib
+csl: assets/title-first.csl
 nocite: |
   @*
 format:
