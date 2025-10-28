@@ -1,0 +1,10 @@
+---
+title: "Journal papers"
+citation: true
+bibliography: refs-journal.bib
+nocite: |
+  @*
+---
+
+::: {#refs}
+:::
