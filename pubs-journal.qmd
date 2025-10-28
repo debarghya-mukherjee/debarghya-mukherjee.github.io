@@ -3,6 +3,10 @@ title: "Journal papers"
 bibliography: refs-journal.bib
 nocite: |
   @*
+format:
+  html:
+    include-in-header: assets/hide-navbar.html
+    toc: false
 ---
 
 ::: {#refs}
