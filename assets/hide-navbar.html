@@ -1,8 +1,24 @@
+<!-- Injected only on embedded publications pages -->
 <style>
-/* Hide navbar & tools in embedded pub pages */
-#quarto-header, nav.navbar, .navbar, .quarto-navbar-tools { display: none !important; }
-body { padding-top: 0 !important; }
+  /* 1) Hide site navbar & toolbar inside the embedded pages */
+  #quarto-header,
+  nav.navbar,
+  .navbar,
+  .quarto-navbar-tools { display: none !important; }
 
-/* Hide the page title inside embedded pages */
-.quarto-title, main h1.title, main h1 { display: none !important; }
+  /* 2) Remove the top padding Quarto adds for fixed navbar */
+  body { padding-top: 0 !important; }
+
+  /* 3) Hide the page title / title block / TOC in the embedded pages */
+  .quarto-title,
+  header.quarto-title-block,
+  main h1.title,
+  #TOC { display: none !important; }
+
+  /* 4) Hide any bibliography headings (both drop-zone and auto-inserted) */
+  h1#refs, h2#refs, h3#refs,
+  h1#references, h2#references, h3#references { display: none !important; }
+
+  /* (Optional) Slightly tighten spacing between bibliography items */
+  .csl-entry { margin: 0.4rem 0 !important; }
 </style>
