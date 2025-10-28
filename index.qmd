@@ -7,7 +7,7 @@ title: "Home"
 _Theoretical statistician (high-dimensional statistics, empirical processes, ML theory)._
 
 ::: {.callout-note}
-**Now:** Transfer learning under covariate shift · Over-parameterized regression · Theory of multi-step reasoning
+**Now:** Transfer learning under covariate shift · Over-parameterized regression · 
 :::
 
 ## Selected papers
@@ -15,8 +15,8 @@ _Theoretical statistician (high-dimensional statistics, empirical processes, ML 
 - **Paper Title B** (Venue, Year). [Paper](#) · [Code](#)
 
 ## News
-- Oct 2025 — Session chair at JSM & CM-Statistics.
-- 2025 — “On Robust Aggregation for Distributed Data” submitted to JASA T&M.
+- Oct 2025 — 
+- 2025 — 
 
 ## Contact
-debarghya@bu.edu · Department of Mathematics & Statistics, Boston University
+mdeba@bu.edu · Department of Mathematics & Statistics, Boston University
