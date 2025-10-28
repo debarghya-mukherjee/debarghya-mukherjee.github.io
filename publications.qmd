@@ -4,13 +4,22 @@ aliases: [research.html]
 ---
 
 ## Journal papers
-::: {#journal-refs .quarto-bibliography bibliography="refs-journal.bib" nocite="@*"}
+::: {#journal-refs .quarto-bibliography}
+nocite: |
+  @*
+bibliography: refs-journal.bib
 :::
 
 ## Conference papers
-::: {#conf-refs .quarto-bibliography bibliography="refs-conference.bib" nocite="@*"}
+::: {#conf-refs .quarto-bibliography}
+nocite: |
+  @*
+bibliography: refs-conference.bib
 :::
 
 ## Preprints & working papers
-::: {#preprint-refs .quarto-bibliography bibliography="refs.bib" nocite="@*"}
+::: {#preprint-refs .quarto-bibliography}
+nocite: |
+  @*
+bibliography: refs.bib
 :::
