@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "cv/index.html",
+    "href": "cv/index.html",
+    "title": "CV",
+    "section": "",
+    "text": "You can place your PDF here later as cv/Debarghya_Mukherjee_CV.pdf and link it from the navbar, or keep this page with links to Google Scholar and other profiles."
+  },
+  {
+    "objectID": "service.html",
+    "href": "service.html",
+    "title": "Service",
+    "section": "",
+    "text": "Reviewer: JASA, AoS, Bernoulli, …\nOrganizer: BU Probability & Statistics Seminar (ongoing).\nSession chair: JSM 2024, CM-Statistics 2024."
+  },
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "MA XXX: Course Title — Syllabus (PDF), lecture notes, assignments."
+  },
+  {
+    "objectID": "teaching.html#section",
+    "href": "teaching.html#section",
+    "title": "Teaching",
+    "section": "",
+    "text": "MA XXX: Course Title — Syllabus (PDF), lecture notes, assignments."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Theoretical statistician (high-dimensional statistics, empirical processes, ML theory).\n\n\n\n\n\n\nNote\n\n\n\nNow: Transfer learning under covariate shift · Over-parameterized regression · Theory of multi-step reasoning\n\n\n\n\n\nPaper Title A (Venue, Year). Paper · Code · Slides · BibTeX\nPaper Title B (Venue, Year). Paper · Code\n\n\n\n\n\nOct 2025 — Session chair at JSM & CM-Statistics.\n2025 — “On Robust Aggregation for Distributed Data” submitted to JASA T&M.\n\n\n\n\ndebarghya@bu.edu · Department of Mathematics & Statistics, Boston University"
+  },
+  {
+    "objectID": "index.html#selected-papers",
+    "href": "index.html#selected-papers",
+    "title": "Home",
+    "section": "",
+    "text": "Paper Title A (Venue, Year). Paper · Code · Slides · BibTeX\nPaper Title B (Venue, Year). Paper · Code"
+  },
+  {
+    "objectID": "index.html#news",
+    "href": "index.html#news",
+    "title": "Home",
+    "section": "",
+    "text": "Oct 2025 — Session chair at JSM & CM-Statistics.\n2025 — “On Robust Aggregation for Distributed Data” submitted to JASA T&M."
+  },
+  {
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "Home",
+    "section": "",
+    "text": "debarghya@bu.edu · Department of Mathematics & Statistics, Boston University"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "All publications\n\nnocite: |  # show all entries from refs.bib"
+  },
+  {
+    "objectID": "students.html",
+    "href": "students.html",
+    "title": "Students",
+    "section": "",
+    "text": "PhD: Student A (topic …), Student B (topic …)\nMS: Student C (topic …), Student D (topic …)"
+  }
+]
