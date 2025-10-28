@@ -1,6 +1,8 @@
 <style>
-/* Hide the site navbar + tools on embedded pages */
+/* Hide navbar & tools in embedded pub pages */
 #quarto-header, nav.navbar, .navbar, .quarto-navbar-tools { display: none !important; }
-/* Remove the top padding that Quarto adds for the fixed navbar */
 body { padding-top: 0 !important; }
+
+/* Hide the page title inside embedded pages */
+.quarto-title, main h1.title, main h1 { display: none !important; }
 </style>
