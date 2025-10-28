@@ -5,21 +5,27 @@ aliases: [research.html]
 
 ## Journal papers
 ::: {#journal-refs .quarto-bibliography}
+---
+bibliography: refs-journal.bib
 nocite: |
   @*
-bibliography: refs-journal.bib
+---
 :::
 
 ## Conference papers
 ::: {#conf-refs .quarto-bibliography}
+---
+bibliography: refs-conference.bib
 nocite: |
   @*
-bibliography: refs-conference.bib
+---
 :::
 
 ## Preprints & working papers
 ::: {#preprint-refs .quarto-bibliography}
+---
+bibliography: refs.bib   # your preprints file
 nocite: |
   @*
-bibliography: refs.bib
+---
 :::
