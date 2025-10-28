@@ -1,25 +1,21 @@
 ---
 title: "Publications"
 aliases: [research.html]
+format:
+  html:
+    include-after-body: assets/iframe-resize.html   # JS for auto-resize
 ---
 
-<!-- Journal (open by default) -->
-<details open>
-  <summary><strong>Journal papers</strong></summary>
-  <iframe src="pubs-journal.html" loading="lazy"
-          style="width:100%; height:1600px; border:0;"></iframe>
-</details>
+::: {.panel-tabset}
+## Journal papers
+<iframe id="tab-journal" src="pubs-journal.html" loading="lazy"
+        style="width:100%; border:0; height:200px;"></iframe>
 
-<!-- Conference -->
-<details>
-  <summary><strong>Conference papers</strong></summary>
-  <iframe src="pubs-conference.html" loading="lazy"
-          style="width:100%; height:1200px; border:0;"></iframe>
-</details>
+## Conference papers
+<iframe id="tab-conf" src="pubs-conference.html" loading="lazy"
+        style="width:100%; border:0; height:200px;"></iframe>
 
-<!-- Preprints -->
-<details>
-  <summary><strong>Preprints &amp; working papers</strong></summary>
-  <iframe src="pubs-preprints.html" loading="lazy"
-          style="width:100%; height:1600px; border:0;"></iframe>
-</details>
+## Preprints & working papers
+<iframe id="tab-preprints" src="pubs-preprints.html" loading="lazy"
+        style="width:100%; border:0; height:200px;"></iframe>
+:::
