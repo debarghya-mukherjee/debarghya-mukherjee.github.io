@@ -10,6 +10,4 @@ format:
     toc: false
 ---
 
-## Journal papers
-::: {#refs}
-:::
+## References {- #refs}
