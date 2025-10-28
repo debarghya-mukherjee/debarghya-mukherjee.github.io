@@ -1,0 +1,6 @@
+---
+title: "Teaching"
+---
+
+## 2024–2025
+- **MA XXX: Course Title** — Syllabus ([PDF](#)), lecture notes, assignments.

@@ -1,0 +1,6 @@
+---
+title: "Students"
+---
+
+- PhD: Student A (topic …), Student B (topic …)
+- MS: Student C (topic …), Student D (topic …)

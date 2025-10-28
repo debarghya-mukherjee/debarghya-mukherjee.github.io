@@ -1,0 +1,22 @@
+---
+title: "Home"
+---
+
+# Debarghya Mukherjee
+
+_Theoretical statistician (high-dimensional statistics, empirical processes, ML theory)._
+
+::: {.callout-note}
+**Now:** Transfer learning under covariate shift · Over-parameterized regression · Theory of multi-step reasoning
+:::
+
+## Selected papers
+- **Paper Title A** (Venue, Year). [Paper](#) · [Code](#) · [Slides](#) · [BibTeX](#)
+- **Paper Title B** (Venue, Year). [Paper](#) · [Code](#)
+
+## News
+- Oct 2025 — Session chair at JSM & CM-Statistics.
+- 2025 — “On Robust Aggregation for Distributed Data” submitted to JASA T&M.
+
+## Contact
+debarghya@bu.edu · Department of Mathematics & Statistics, Boston University

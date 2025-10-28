@@ -1,0 +1,5 @@
+---
+title: "CV"
+---
+
+You can place your PDF here later as `cv/Debarghya_Mukherjee_CV.pdf` and link it from the navbar, or keep this page with links to Google Scholar and other profiles.

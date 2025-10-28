@@ -1,0 +1,36 @@
+project:
+  type: website
+  output-dir: docs  # GitHub Pages will serve from /docs
+
+website:
+  title: "Debarghya Mukherjee"
+  search: true
+  navbar:
+    left:
+      - text: "Home"
+        file: index.qmd
+      - text: "Publications"
+        file: publications.qmd
+      - text: "Teaching"
+        file: teaching.qmd
+      - text: "Service"
+        file: service.qmd
+      - text: "Students"
+        file: students.qmd
+    right:
+      - text: "CV"
+        file: cv/index.qmd
+      - icon: github
+        href: https://github.com/debarghya-mukherjee
+      - icon: mortarboard
+        href: https://scholar.google.com/citations?user=I4sJ7BUAAAAJ
+  page-footer:
+    center: "© Debarghya Mukherjee · Boston University · Last updated: {{< meta date >}}"
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: slate
+    css: styles.scss
+    toc: true
