@@ -1,53 +1,25 @@
 ---
 title: "Publications"
 aliases: [research.html]
-citation: true     # ensure citeproc runs on this page
 ---
 
 <!-- Journal (open by default) -->
 <details open>
-<summary><strong>Journal papers</strong></summary>
-
-::: {#journal-refs .refsection}
----
-bibliography: refs-journal.bib
-nocite: |
-  @*
----
-::: {#refs}
-:::
-:::
-
+  <summary><strong>Journal papers</strong></summary>
+  <iframe src="pubs-journal.html" loading="lazy"
+          style="width:100%; height:1600px; border:0;"></iframe>
 </details>
 
 <!-- Conference -->
 <details>
-<summary><strong>Conference papers</strong></summary>
-
-::: {#conf-refs .refsection}
----
-bibliography: refs-conference.bib
-nocite: |
-  @*
----
-::: {#refs}
-:::
-:::
-
+  <summary><strong>Conference papers</strong></summary>
+  <iframe src="pubs-conference.html" loading="lazy"
+          style="width:100%; height:1200px; border:0;"></iframe>
 </details>
 
 <!-- Preprints -->
 <details>
-<summary><strong>Preprints & working papers</strong></summary>
-
-::: {#preprint-refs .refsection}
----
-bibliography: refs.bib
-nocite: |
-  @*
----
-::: {#refs}
-:::
-:::
-
+  <summary><strong>Preprints &amp; working papers</strong></summary>
+  <iframe src="pubs-preprints.html" loading="lazy"
+          style="width:100%; height:1600px; border:0;"></iframe>
 </details>
