@@ -1,6 +1,7 @@
 ---
 title: "Journal papers"
 bibliography: refs-journal.bib
+csl: assets/title-first.csl
 nocite: |
   @*
 format:
