@@ -1,9 +1,53 @@
 ---
 title: "Publications"
 aliases: [research.html]
+citation: true     # ensure citeproc runs on this page
 ---
 
-### Browse by type
-- **[Journal papers](pubs-journal.qmd)**
-- **[Conference papers](pubs-conference.qmd)**
-- **[Preprints & working papers](pubs-preprints.qmd)**
+<!-- Journal (open by default) -->
+<details open>
+<summary><strong>Journal papers</strong></summary>
+
+::: {#journal-refs .refsection}
+---
+bibliography: refs-journal.bib
+nocite: |
+  @*
+---
+::: {#refs}
+:::
+:::
+
+</details>
+
+<!-- Conference -->
+<details>
+<summary><strong>Conference papers</strong></summary>
+
+::: {#conf-refs .refsection}
+---
+bibliography: refs-conference.bib
+nocite: |
+  @*
+---
+::: {#refs}
+:::
+:::
+
+</details>
+
+<!-- Preprints -->
+<details>
+<summary><strong>Preprints & working papers</strong></summary>
+
+::: {#preprint-refs .refsection}
+---
+bibliography: refs.bib
+nocite: |
+  @*
+---
+::: {#refs}
+:::
+:::
+
+</details>
