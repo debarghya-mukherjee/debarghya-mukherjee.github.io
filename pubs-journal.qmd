@@ -9,7 +9,6 @@ format:
 ::: {.quarto-bibliography}
 ---
 bibliography: refs-journal.bib
-csl: assets/title-first.csl
 nocite: |
   @*
 ---
