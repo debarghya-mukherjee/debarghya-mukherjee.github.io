@@ -1,13 +1,12 @@
 ---
 title: "Publications"
 bibliography: refs.bib
-link-citations: true
-aliases: [research.html]  # old link preserved
+nocite: |
+  @*          # include ALL entries from refs.bib
+aliases: [research.html]
 ---
 
-### All publications
+## Publications
 
-::: {.quarto-bibliography}
-nocite: |
-  @*    # show all entries from refs.bib
+::: {#refs}
 :::
