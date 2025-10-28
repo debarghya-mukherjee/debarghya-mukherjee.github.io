@@ -1,22 +1,17 @@
 ---
 title: "Publications"
 aliases: [research.html]
+csl: apa.csl           # optional, any CSL is fine
 ---
 
-::: {#journal-refs .refsection bibliography="refs-journal.bib" nocite="@*"}
 ## Journal papers
-::: {#refs}
-:::
+::: {#journal-refs .quarto-bibliography nocite="@*" bibliography="refs-journal.bib"}
 :::
 
-::: {#conf-refs .refsection bibliography="refs-conference.bib" nocite="@*"}
 ## Conference papers
-::: {#refs}
-:::
+::: {#conf-refs .quarto-bibliography nocite="@*" bibliography="refs-conference.bib"}
 :::
 
-::: {#preprint-refs .refsection bibliography="refs.bib" nocite="@*"}
 ## Preprints & working papers
-::: {#refs}
-:::
+::: {#preprint-refs .quarto-bibliography nocite="@*" bibliography="refs.bib"}
 :::
