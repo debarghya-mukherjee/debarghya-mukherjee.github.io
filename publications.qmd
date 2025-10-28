@@ -1,17 +1,38 @@
 ---
 title: "Publications"
 aliases: [research.html]
-csl: apa.csl           # optional, any CSL is fine
+citation: true         # <-- ensures citeproc runs even without doc-level bibliography
 ---
 
+::: {#journal-refs .refsection}
+---
+bibliography: refs-journal.bib
+nocite: |
+  @*
+---
 ## Journal papers
-::: {#journal-refs .quarto-bibliography nocite="@*" bibliography="refs-journal.bib"}
+::: {#refs}
+:::
 :::
 
+::: {#conf-refs .refsection}
+---
+bibliography: refs-conference.bib
+nocite: |
+  @*
+---
 ## Conference papers
-::: {#conf-refs .quarto-bibliography nocite="@*" bibliography="refs-conference.bib"}
+::: {#refs}
+:::
 :::
 
+::: {#preprint-refs .refsection}
+---
+bibliography: refs.bib      # your preprints/working file
+nocite: |
+  @*
+---
 ## Preprints & working papers
-::: {#preprint-refs .quarto-bibliography nocite="@*" bibliography="refs.bib"}
+::: {#refs}
+:::
 :::
