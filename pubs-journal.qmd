@@ -1,15 +1,13 @@
 ---
 title: "Journal papers"
+bibliography: refs-journal.bib
+csl: assets/title-first.csl
+nocite: |
+  @*
 format:
   html:
     include-in-header: assets/hide-navbar.html
     toc: false
 ---
 
-::: {.quarto-bibliography}
----
-bibliography: refs-journal.bib
-nocite: |
-  @*
----
-:::
+## References {#refs}
