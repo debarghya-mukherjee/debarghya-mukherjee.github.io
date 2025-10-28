@@ -1,38 +1,9 @@
 ---
 title: "Publications"
 aliases: [research.html]
-citation: true         # <-- ensures citeproc runs even without doc-level bibliography
 ---
 
-::: {#journal-refs .refsection}
----
-bibliography: refs-journal.bib
-nocite: |
-  @*
----
-## Journal papers
-::: {#refs}
-:::
-:::
-
-::: {#conf-refs .refsection}
----
-bibliography: refs-conference.bib
-nocite: |
-  @*
----
-## Conference papers
-::: {#refs}
-:::
-:::
-
-::: {#preprint-refs .refsection}
----
-bibliography: refs.bib      # your preprints/working file
-nocite: |
-  @*
----
-## Preprints & working papers
-::: {#refs}
-:::
-:::
+### Browse by type
+- **[Journal papers](pubs-journal.qmd)**
+- **[Conference papers](pubs-conference.qmd)**
+- **[Preprints & working papers](pubs-preprints.qmd)**
