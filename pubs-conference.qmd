@@ -1,0 +1,10 @@
+---
+title: "Conference papers"
+citation: true
+bibliography: refs-conference.bib
+nocite: |
+  @*
+---
+
+::: {#refs}
+:::
