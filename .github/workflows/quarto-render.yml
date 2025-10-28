@@ -17,18 +17,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0       # needed for rebase/pull
+          fetch-depth: 0       # allow rebase if main moved
 
-      # ⬇️ Pin a modern Quarto (bundles recent Pandoc)
+      # Pin a modern Quarto (bundles a recent Pandoc internally)
       - uses: quarto-dev/quarto-actions/setup@v2
         with:
           version: "1.5.57"
 
-      # ⬇️ Helpful: print versions into the log
+      # Show versions (don't call pandoc directly; it's inside Quarto)
       - name: Show tool versions
         run: |
           quarto --version
-          pandoc --version
+          quarto check --quiet || true
 
       - name: Render site
         run: quarto render
@@ -40,9 +40,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+          # Stage rendered output
           git add -A docs
           git commit -m "Render site" || echo "No changes to commit"
 
+          # If branch moved while rendering, rebase safely and push
           git fetch origin "$BRANCH"
           git pull --rebase --autostash origin "$BRANCH"
           git push origin HEAD:"$BRANCH"
