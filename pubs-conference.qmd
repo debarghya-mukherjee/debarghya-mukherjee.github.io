@@ -3,6 +3,10 @@ title: "Conference papers"
 bibliography: refs-conference.bib
 nocite: |
   @*
+format:
+  html:
+    include-in-header: assets/hide-navbar.html
+    toc: false
 ---
 
 ::: {#refs}
