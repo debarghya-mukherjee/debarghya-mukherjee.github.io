@@ -1,6 +1,7 @@
 ---
 title: "Preprints & working papers"
 bibliography: refs.bib
+csl: assets/title-first.csl
 nocite: |
   @*
 format:
