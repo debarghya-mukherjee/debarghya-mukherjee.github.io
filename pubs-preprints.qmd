@@ -3,6 +3,10 @@ title: "Preprints & working papers"
 bibliography: refs.bib
 nocite: |
   @*
+format:
+  html:
+    include-in-header: assets/hide-navbar.html
+    toc: false
 ---
 
 ::: {#refs}
