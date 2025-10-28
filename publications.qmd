@@ -3,35 +3,20 @@ title: "Publications"
 aliases: [research.html]
 ---
 
-::: {#journal-refs .refsection}
+::: {#journal-refs .refsection bibliography="refs-journal.bib" nocite="@*"}
 ## Journal papers
----
-bibliography: refs-journal.bib
-nocite: |
-  @*
----
 ::: {#refs}
 :::
 :::
 
-::: {#conf-refs .refsection}
+::: {#conf-refs .refsection bibliography="refs-conference.bib" nocite="@*"}
 ## Conference papers
----
-bibliography: refs-conference.bib
-nocite: |
-  @*
----
 ::: {#refs}
 :::
 :::
 
-::: {#preprint-refs .refsection}
+::: {#preprint-refs .refsection bibliography="refs.bib" nocite="@*"}
 ## Preprints & working papers
----
-bibliography: refs.bib
-nocite: |
-  @*
----
 ::: {#refs}
 :::
 :::
