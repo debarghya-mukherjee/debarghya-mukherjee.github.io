@@ -56,18 +56,32 @@
     "text": "mdeb@bu.edu · Department of Mathematics & Statistics, Boston University"
   },
   {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "nocite: | @* bibliography: refs-journal.bib"
+  },
+  {
+    "objectID": "publications.html#journal-papers",
+    "href": "publications.html#journal-papers",
+    "title": "Publications",
+    "section": "",
+    "text": "nocite: | @* bibliography: refs-journal.bib"
+  },
+  {
     "objectID": "publications.html#conference-papers",
     "href": "publications.html#conference-papers",
     "title": "Publications",
     "section": "Conference papers",
-    "text": "Conference papers"
+    "text": "Conference papers\n\nnocite: | @* bibliography: refs-conference.bib"
   },
   {
     "objectID": "publications.html#preprints-working-papers",
     "href": "publications.html#preprints-working-papers",
     "title": "Publications",
     "section": "Preprints & working papers",
-    "text": "Preprints & working papers"
+    "text": "Preprints & working papers\n\nnocite: | @* bibliography: refs.bib"
   },
   {
     "objectID": "students.html",
