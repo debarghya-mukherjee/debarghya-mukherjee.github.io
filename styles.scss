@@ -2,3 +2,24 @@
 :root { --bs-primary: #cc0000; }
 a { text-decoration: none; }
 .navbar-brand { font-weight: 700; }
+
+
+/* Number bibliography entries per section */
+#journal-refs, #conf-refs, #preprint-refs { counter-reset: refnum; }
+
+#journal-refs .csl-entry,
+#conf-refs .csl-entry,
+#preprint-refs .csl-entry {
+  counter-increment: refnum;
+  position: relative;
+  padding-left: 2em;        /* space for the number */
+}
+
+#journal-refs .csl-entry::before,
+#conf-refs .csl-entry::before,
+#preprint-refs .csl-entry::before {
+  content: counter(refnum) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
