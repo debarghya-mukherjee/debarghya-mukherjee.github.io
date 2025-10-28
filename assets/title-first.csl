@@ -4,7 +4,9 @@
     <title>Title-first (paper title before authors)</title>
     <id>https://example.org/styles/title-first</id>
     <updated>2025-10-28T00:00:00Z</updated>
-    <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This style is available under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
+    <rights license="http://creativecommons.org/licenses/by-sa/3.0/">
+      This style is available under a Creative Commons Attribution-ShareAlike 3.0 License
+    </rights>
   </info>
 
   <!-- ===== Macros ===== -->
@@ -51,12 +53,22 @@
         <text variable="DOI" prefix=" https://doi.org/"/>
       </if>
       <else-if variable="URL">
-        <text variable="URL" prefix=" " />
+        <text variable="URL" prefix=" "/>
       </else-if>
     </choose>
   </macro>
 
-  <!-- ===== Bibliography layout ===== -->
+  <!-- ===== REQUIRED: citation element (even if you don't cite in-text) ===== -->
+  <citation>
+    <layout delimiter="; ">
+      <group delimiter=", ">
+        <text macro="author"/>
+        <text macro="year"/>
+      </group>
+    </layout>
+  </citation>
+
+  <!-- ===== Bibliography layout (Title → Authors → Venue/Year) ===== -->
   <bibliography hanging-indent="true" entry-spacing="1" line-spacing="1.2">
     <layout suffix=".">
       <!-- Title first -->
@@ -67,7 +79,7 @@
       <text macro="author"/>
       <text value=". "/>
 
-      <!-- Venue details (journal/booktitle/etc.) -->
+      <!-- Venue details -->
       <choose>
         <if type="article-journal article-magazine article-newspaper">
           <text macro="container"/>
