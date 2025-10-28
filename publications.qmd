@@ -1,12 +1,25 @@
 ---
 title: "Publications"
-bibliography: refs.bib
-nocite: |
-  @*          # include ALL entries from refs.bib
-aliases: [research.html]
+aliases: [research.html]  # keeps your old link working
 ---
 
-## Publications
+## Journal papers
+::: {#journal-refs .quarto-bibliography}
+nocite: |
+  @*              # include ALL entries from refs-journal.bib
+bibliography: refs-journal.bib
+:::
 
-::: {#refs}
+## Conference papers
+::: {#conf-refs .quarto-bibliography}
+nocite: |
+  @*
+bibliography: refs-conference.bib
+:::
+
+## Preprints & working papers
+::: {#preprint-refs .quarto-bibliography}
+nocite: |
+  @*
+bibliography: refs.bib
 :::
