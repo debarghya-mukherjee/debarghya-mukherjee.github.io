@@ -88,12 +88,18 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<style>
+/* Hide the site navbar + tools on embedded pages */
+#quarto-header, nav.navbar, .navbar, .quarto-navbar-tools { display: none !important; }
+/* Remove the top padding that Quarto adds for the fixed navbar */
+body { padding-top: 0 !important; }
+</style>
 
 
 <link rel="stylesheet" href="styles.scss">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -158,9 +164,7 @@ div.csl-indent {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
