@@ -4,10 +4,9 @@ bibliography: refs-journal.bib
 csl: assets/title-first.csl
 nocite: |
   @*
+reference-location: document
 format:
   html:
     include-in-header: assets/hide-navbar.html
     toc: false
 ---
-
-## References {#refs}
