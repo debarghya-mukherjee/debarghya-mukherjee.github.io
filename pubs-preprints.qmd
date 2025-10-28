@@ -10,6 +10,4 @@ format:
     toc: false
 ---
 
-## Preprints & working papers
-::: {#refs}
-:::
+## References {- #refs}
