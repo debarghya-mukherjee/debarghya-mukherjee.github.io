@@ -44,30 +44,23 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Home",
+    "title": "Debarghya Mukherjee",
     "section": "",
-    "text": "Theoretical statistician (high-dimensional statistics, empirical processes, ML theory).\n\n\n\n\n\n\nNote\n\n\n\nNow: Transfer learning under covariate shift · Over-parameterized regression ·\n\n\n\n\n\nPaper Title A (Venue, Year). Paper · Code · Slides · BibTeX\nPaper Title B (Venue, Year). Paper · Code\n\n\n\n\n\nOct 2025 —\n2025 —\n\n\n\n\nmdeb@bu.edu · Department of Mathematics & Statistics, Boston University"
+    "text": "Welcome! I’m an Assistant Professor in the Department of Mathematics & Statistics at Boston University. My research spans high-dimensional statistics, empirical processes, transfer learning, and theory of modern ML."
   },
   {
     "objectID": "index.html#selected-papers",
     "href": "index.html#selected-papers",
-    "title": "Home",
-    "section": "",
-    "text": "Paper Title A (Venue, Year). Paper · Code · Slides · BibTeX\nPaper Title B (Venue, Year). Paper · Code"
+    "title": "Debarghya Mukherjee",
+    "section": "Selected papers",
+    "text": "Selected papers\n\n\n\nTip: add/remove keys under nocite to curate this list. The keys must exist in one of the bib files above."
   },
   {
     "objectID": "index.html#news",
     "href": "index.html#news",
-    "title": "Home",
-    "section": "",
-    "text": "Oct 2025 —\n2025 —"
-  },
-  {
-    "objectID": "index.html#contact",
-    "href": "index.html#contact",
-    "title": "Home",
-    "section": "",
-    "text": "mdeb@bu.edu · Department of Mathematics & Statistics, Boston University"
+    "title": "Debarghya Mukherjee",
+    "section": "News",
+    "text": "News\n\nOct 2025 — Paper on CINDES (classification induced neural density estimator) posted to arXiv.\n\nSep 2025 — Gave a seminar at BU on high-dimensional transfer.\n\nAug 2025 — Our DRO-Augment paper accepted (camera-ready).\n\nJul 2025 — Organised a session at JSM 2025 on modern empirical process theory."
   },
   {
     "objectID": "pubs-conference.html",
