@@ -23,3 +23,23 @@ a { text-decoration: none; }
   left: 0;
   top: 0;
 }
+
+/* --- About page: 25% (photo) / 75% (content) on desktop --- */
+@media (min-width: 992px) { /* lg and up */
+  /* First column = photo/left card */
+  .about .row > [class*="col-"]:first-child {
+    flex: 0 0 25% !important;
+    max-width: 25% !important;
+  }
+  /* Second column = text, selected papers, news */
+  .about .row > [class*="col-"]:last-child {
+    flex: 0 0 75% !important;
+    max-width: 75% !important;
+  }
+}
+
+/* Make sure the image scales nicely inside the narrower column */
+.about img {
+  max-width: 100%;
+  height: auto;
+}
