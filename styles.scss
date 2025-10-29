@@ -43,3 +43,26 @@ a { text-decoration: none; }
   max-width: 100%;
   height: auto;
 }
+
+/* --- Trestles about page: force 25% | 75% split on desktop --- */
+@media (min-width: 992px) {
+  /* trestles puts a marker class on the page */
+  .quarto-about-trestles {
+
+    /* When trestles uses the CSS grid utility classes */
+    .g-col-lg-4 { grid-column: span 3 !important; }   /* 3/12 = 25%  */
+    .g-col-lg-8 { grid-column: span 9 !important; }   /* 9/12 = 75%  */
+
+    /* When trestles falls back to Bootstrap flex columns */
+    .col-lg-4 { flex: 0 0 25% !important; max-width: 25% !important; }
+    .col-lg-8 { flex: 0 0 75% !important; max-width: 75% !important; }
+
+    /* Safety: if a plain .about grid is used, set 2 columns */
+    .about .grid { grid-template-columns: 25% 75% !important; }
+    .about .grid > *:first-child { grid-column: 1 !important; }
+    .about .grid > *:last-child  { grid-column: 2 !important; }
+  }
+
+  /* Keep the image behaving inside the narrower column */
+  .quarto-about-trestles img { max-width: 100%; height: auto; }
+}
