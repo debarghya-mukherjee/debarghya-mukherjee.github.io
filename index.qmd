@@ -56,7 +56,9 @@ nocite: |
 
 ## News
 
-- **Oct 2025** — Two papers accepted at NeurIPS 2025, with one being spotlight! 
-- **Aug 2025** — Awarded an NSF DMS grant with Prof. Yves Atchade. 
+- **Oct 2025** — Two papers accepted at NeurIPS 2025, with one being spotlight!
+- **Oct 2025** — My paper on deconvolution under vanishing noise ([arXiv](https://arxiv.org/abs/2404.09306){target=_blank}) with Prof. [Cécile Durot](https://sites.google.com/view/cecile-durot){target=_blank} got accepted in Bernoulli. 
+- **Aug 2025** — Awarded an NSF DMS grant with Prof.
+  [Yves Atchadé](https://scholar.google.com/citations?user=PYAn40EAAAAJ&hl=en){target=_blank}. 
 
 <!-- Keep adding bullets; newest first works well. -->
