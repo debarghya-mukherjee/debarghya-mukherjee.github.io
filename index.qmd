@@ -20,11 +20,11 @@ about:
       href: https://github.com/debarghya-mukherjee
     - icon: mail
       text: Email
-      href: mailto:debarghya@bu.edu
+      href: mailto:mdeb@bu.edu
 ---
 
-Welcome! I’m an Assistant Professor in the Department of Mathematics & Statistics at Boston University. 
-My research spans high-dimensional statistics, empirical processes, transfer learning, and theory of modern ML.
+Welcome! I am an Assistant Professor in the Department of Mathematics & Statistics at Boston University. 
+My research spans high-dimensional statistics, empirical processes, transfer learning, and the theory of modern ML.
 
 ---
 
@@ -56,9 +56,7 @@ nocite: |
 
 ## News
 
-- **Oct 2025** — Paper on CINDES (classification induced neural density estimator) posted to arXiv.  
-- **Sep 2025** — Gave a seminar at BU on high-dimensional transfer.  
-- **Aug 2025** — Our DRO-Augment paper accepted (camera-ready).  
-- **Jul 2025** — Organised a session at JSM 2025 on modern empirical process theory.
+- **Oct 2025** — Two papers accepted at NeurIPS 2025, with one being spotlight! 
+- **Aug 2025** — Awarded an NSF DMS grant with Prof. Yves Atchade. 
 
 <!-- Keep adding bullets; newest first works well. -->
