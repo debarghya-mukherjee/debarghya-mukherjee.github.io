@@ -1,10 +1,15 @@
+/* =========================
+   Site look & feel
+   ========================= */
+
 /* Minimal polish with BU-red accent */
 :root { --bs-primary: #cc0000; }
 a { text-decoration: none; }
 .navbar-brand { font-weight: 700; }
 
-
-/* Number bibliography entries per section */
+/* =========================
+   Publications numbering
+   ========================= */
 #journal-refs, #conf-refs, #preprint-refs { counter-reset: refnum; }
 
 #journal-refs .csl-entry,
@@ -24,45 +29,37 @@ a { text-decoration: none; }
   top: 0;
 }
 
-/* --- About page: 25% (photo) / 75% (content) on desktop --- */
-@media (min-width: 992px) { /* lg and up */
-  /* First column = photo/left card */
-  .about .row > [class*="col-"]:first-child {
-    flex: 0 0 25% !important;
-    max-width: 25% !important;
-  }
-  /* Second column = text, selected papers, news */
-  .about .row > [class*="col-"]:last-child {
-    flex: 0 0 75% !important;
-    max-width: 75% !important;
-  }
-}
-
-/* Make sure the image scales nicely inside the narrower column */
-.about img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* --- Trestles about page: force 25% | 75% split on desktop --- */
+/* =========================
+   About (trestles) 25% / 75%
+   =========================
+   Force the profile/photo column to 25% and the content column to 75%
+   on large screens. Works for both CSS-grid (.grid/g-col-*) and
+   Bootstrap flex (.row/col-lg-*) variants used by trestles.
+*/
 @media (min-width: 992px) {
-  /* trestles puts a marker class on the page */
-  .quarto-about-trestles {
 
-    /* When trestles uses the CSS grid utility classes */
-    .g-col-lg-4 { grid-column: span 3 !important; }   /* 3/12 = 25%  */
-    .g-col-lg-8 { grid-column: span 9 !important; }   /* 9/12 = 75%  */
-
-    /* When trestles falls back to Bootstrap flex columns */
-    .col-lg-4 { flex: 0 0 25% !important; max-width: 25% !important; }
-    .col-lg-8 { flex: 0 0 75% !important; max-width: 75% !important; }
-
-    /* Safety: if a plain .about grid is used, set 2 columns */
-    .about .grid { grid-template-columns: 25% 75% !important; }
-    .about .grid > *:first-child { grid-column: 1 !important; }
-    .about .grid > *:last-child  { grid-column: 2 !important; }
+  /* Case 1: trestles grid layout */
+  .quarto-about-trestles .grid {
+    display: grid !important;
+    grid-template-columns: 25% 75% !important;
+    gap: 1.25rem;
+    align-items: start;
   }
+  .quarto-about-trestles .grid > *:first-child { grid-column: 1 !important; }
+  .quarto-about-trestles .grid > *:nth-child(2) { grid-column: 2 !important; }
 
-  /* Keep the image behaving inside the narrower column */
+  /* Case 2: explicit g-col sizes */
+  .quarto-about-trestles [class*="g-col-lg-"]:first-child  { grid-column: span 3 !important; } /* 3/12 */
+  .quarto-about-trestles [class*="g-col-lg-"]:nth-child(2) { grid-column: span 9 !important; } /* 9/12 */
+
+  /* Case 3: Bootstrap flex fallback */
+  .quarto-about-trestles .row > *:first-child { flex: 0 0 25% !important; max-width: 25% !important; }
+  .quarto-about-trestles .row > *:nth-child(2) { flex: 0 0 75% !important; max-width: 75% !important; }
+
+  /* Image scaling inside the narrower column */
   .quarto-about-trestles img { max-width: 100%; height: auto; }
 }
+
+/* ===== Optional: if you still see small icons on the right of the navbar, hide them
+   (remove this if you decide to keep navbar tools) */
+.navbar .quarto-navbar-tools { display: none !important; }
