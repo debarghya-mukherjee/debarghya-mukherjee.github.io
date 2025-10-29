@@ -1,22 +1,64 @@
 ---
-title: "Home"
+title: "Debarghya Mukherjee"
+format:
+  html:
+    toc: false
+# ---- About header (photo + links) ----
+about:
+  template: trestles          # other nice options: jolla, solana, marquee
+  image: assets/img/deb_picture.jpg
+  image-shape: round          # circle crop; use "rectangle" for square
+  links:
+    - icon: mortarboard
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=I4sJ7BUAAAAJ
+    - icon: file-text
+      text: CV
+      href: cv/cv_Debarghya.pdf
+    - icon: github
+      text: GitHub
+      href: https://github.com/debarghya-mukherjee
+    - icon: mail
+      text: Email
+      href: mailto:debarghya@bu.edu
 ---
 
-# Debarghya Mukherjee
+Welcome! I’m an Assistant Professor in the Department of Mathematics & Statistics at Boston University. 
+My research spans high-dimensional statistics, empirical processes, transfer learning, and theory of modern ML.
 
-_Theoretical statistician (high-dimensional statistics, empirical processes, ML theory)._
-
-::: {.callout-note}
-**Now:** Transfer learning under covariate shift · Over-parameterized regression · 
-:::
+---
 
 ## Selected papers
-- **Paper Title A** (Venue, Year). [Paper](#) · [Code](#) · [Slides](#) · [BibTeX](#)
-- **Paper Title B** (Venue, Year). [Paper](#) · [Code](#)
+
+::: {#home-selected .quarto-bibliography}
+---
+# Include whichever bib files hold your favorites (you can list multiple)
+bibliography:
+  - refs-journal.bib
+  - refs-conference.bib
+  - refs.bib
+# Use your custom "title-first" style (title → authors → venue)
+csl: assets/title-first.csl
+
+# List ONLY the works you want to show here (by bibkeys)
+# Replace these keys with your own selections:
+nocite: |
+  @mukherjee2021optimal
+  @maity2020there
+  @mukherjee2021outlier
+  @ge2024optimal
+---
+:::
+
+> Tip: add/remove keys under `nocite` to curate this list. The keys must exist in one of the bib files above.
+
+---
 
 ## News
-- Oct 2025 — 
-- 2025 — 
 
-## Contact
-mdeb@bu.edu · Department of Mathematics & Statistics, Boston University
+- **Oct 2025** — Paper on CINDES (classification induced neural density estimator) posted to arXiv.  
+- **Sep 2025** — Gave a seminar at BU on high-dimensional transfer.  
+- **Aug 2025** — Our DRO-Augment paper accepted (camera-ready).  
+- **Jul 2025** — Organised a session at JSM 2025 on modern empirical process theory.
+
+<!-- Keep adding bullets; newest first works well. -->
