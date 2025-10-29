@@ -4,6 +4,7 @@ bibliography: refs.bib
 csl: assets/title-first.csl
 nocite: |
   @*
+reference-section-title: ""
 format:
   html:
     include-in-header: assets/hide-navbar.html
@@ -12,4 +13,3 @@ format:
 
 ::: {#refs}
 :::
-
