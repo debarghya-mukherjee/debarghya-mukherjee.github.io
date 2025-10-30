@@ -63,3 +63,44 @@ a { text-decoration: none; }
 /* ===== Optional: if you still see small icons on the right of the navbar, hide them
    (remove this if you decide to keep navbar tools) */
 .navbar .quarto-navbar-tools { display: none !important; }
+
+
+/* ===== Force trestles About to 25% (photo) | 75% (content) ===== */
+/* Covers grid + flex layouts at lg and xl breakpoints */
+@media (min-width: 992px) {
+  /* Named wrappers used by trestles (most reliable) */
+  .quarto-about-trestles .about-sidebar {
+    flex: 0 0 25% !important; max-width: 25% !important;
+    grid-column: span 3 !important;
+  }
+  .quarto-about-trestles .about-main {
+    flex: 0 0 75% !important; max-width: 75% !important;
+    grid-column: span 9 !important;
+  }
+
+  /* Bootstrap flex fallback (lg) */
+  .quarto-about-trestles .row > *:first-child { flex: 0 0 25% !important; max-width: 25% !important; }
+  .quarto-about-trestles .row > *:nth-child(2) { flex: 0 0 75% !important; max-width: 75% !important; }
+
+  /* CSS grid utility fallback (lg) */
+  .quarto-about-trestles .grid > *:first-child  { grid-column: span 3 !important; }
+  .quarto-about-trestles .grid > *:nth-child(2) { grid-column: span 9 !important; }
+}
+
+/* XL breakpoint too (some builds switch to col-xl-* / g-col-xl-*) */
+@media (min-width: 1200px) {
+  /* Bootstrap flex */
+  .quarto-about-trestles .col-xl-4 { flex: 0 0 25% !important; max-width: 25% !important; }
+  .quarto-about-trestles .col-xl-8 { flex: 0 0 75% !important; max-width: 75% !important; }
+
+  /* CSS grid utilities */
+  .quarto-about-trestles [class*="g-col-xl-"]:first-child  { grid-column: span 3 !important; }
+  .quarto-about-trestles [class*="g-col-xl-"]:nth-child(2) { grid-column: span 9 !important; }
+}
+
+/* Image behavior inside the narrower column */
+.quarto-about-trestles img { max-width: 100%; height: auto; }
+
+/* If top-right mini icon group still appears, hide it */
+.navbar .quarto-navbar-tools { display: none !important; }
+
