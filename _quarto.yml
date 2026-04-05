@@ -1,6 +1,8 @@
 project:
   type: website
-  output-dir: docs  # GitHub Pages will serve from /docs
+  output-dir: docs
+  resources:
+    - cv/cv_Debarghya.pdf
 
 website:
   title: "Debarghya Mukherjee"
@@ -19,7 +21,7 @@ website:
         file: students.qmd
     right:
       - text: "CV"
-        file: cv/index.qmd
+        href: cv/cv_Debarghya.pdf
       - icon: github
         href: https://github.com/debarghya-mukherjee
       - icon: mortarboard
